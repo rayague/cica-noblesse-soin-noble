@@ -48,11 +48,11 @@ const Tarifs = () => {
   ];
 
   return (
-    <section id="tarifs" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section id="tarifs" className="py-20 bg-gradient-to-b from-yellow-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-            Nos <span className="text-sky-blue">Tarifs</span>
+            Nos <span className="text-noble-yellow">Tarifs</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Des prix transparents et compétitifs pour des prestations de qualité exceptionnelle.
@@ -82,7 +82,7 @@ const Tarifs = () => {
         </div>
 
         {/* Avantages inclus */}
-        <div className="bg-gradient-to-r from-noble-yellow-light to-sky-blue-light rounded-2xl p-8 animate-fade-in">
+        <div className="bg-noble-yellow-light rounded-2xl p-8 animate-fade-in">
           <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">
             Avantages inclus dans tous nos services
           </h3>
@@ -90,7 +90,7 @@ const Tarifs = () => {
             {avantages.map((avantage, index) => (
               <div key={index} className="flex items-center space-x-3">
                 <div className="bg-white rounded-full p-1">
-                  <Check size={16} className="text-green-600" />
+                  <Check size={16} className="text-sky-blue" />
                 </div>
                 <span className="text-gray-700">{avantage}</span>
               </div>

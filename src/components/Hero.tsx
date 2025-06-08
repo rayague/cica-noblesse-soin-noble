@@ -3,7 +3,7 @@ import { Sparkles, Star } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="accueil" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-noble-yellow-light to-sky-blue-light">
+    <section id="accueil" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-noble-yellow-light to-yellow-100">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 animate-pulse">
@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-800">
             <span className="text-noble-yellow">Cica</span>{' '}
-            <span className="text-sky-blue">Noblesse</span>
+            <span className="text-noble-yellow">Noblesse</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-700 font-light max-w-2xl mx-auto">
@@ -42,7 +42,7 @@ const Hero = () => {
             </a>
             <a 
               href="#contact"
-              className="bg-sky-blue text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-400 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="border-2 border-noble-yellow text-noble-yellow px-8 py-3 rounded-full font-semibold hover:bg-noble-yellow hover:text-white transition-all duration-300 transform hover:scale-105"
             >
               Nous contacter
             </a>

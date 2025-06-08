@@ -60,8 +60,8 @@ const Services = () => {
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 animate-scale-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="bg-gradient-to-br from-noble-yellow-light to-sky-blue-light w-16 h-16 rounded-xl flex items-center justify-center mb-6">
-                <service.icon size={32} className="text-gray-700" />
+              <div className="bg-noble-yellow-light w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                <service.icon size={32} className="text-noble-yellow" />
               </div>
               
               <h3 className="text-xl font-bold mb-4 text-gray-800">{service.title}</h3>
