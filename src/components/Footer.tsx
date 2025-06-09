@@ -1,4 +1,3 @@
-
 import { Heart, MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
@@ -6,7 +5,6 @@ const Footer = () => {
     { name: 'Accueil', href: '#accueil' },
     { name: 'Services', href: '#services' },
     { name: 'Tarifs', href: '#tarifs' },
-    { name: 'À propos', href: '#apropos' },
     { name: 'Contact', href: '#contact' }
   ];
 
@@ -14,14 +12,15 @@ const Footer = () => {
     'Nettoyage à sec',
     'Lavage aqueux',
     'Repassage professionnel',
-    'Détachage expert',
-    'Service express',
-    'Retouches couture'
+    'Service express'
   ];
 
   return (
-    <footer className="bg-gray-900 text-white py-16">
-      <div className="container mx-auto px-4">
+    <footer className="relative bg-gray-900 text-white py-16">
+      {/* Overlay pour améliorer la lisibilité */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-gray-800 opacity-90"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Logo et description */}
           <div className="lg:col-span-1">
@@ -29,16 +28,10 @@ const Footer = () => {
               <span className="text-noble-yellow">Cica</span>{' '}
               <span className="text-sky-blue">Noblesse</span>
             </div>
-            <p className="text-gray-400 mb-6 leading-relaxed">
-              Le soin noble de vos vêtements depuis plus de 20 ans. 
+            <p className="text-gray-300 mb-6 leading-relaxed">
+              Le soin noble de vos vêtements depuis plusieurs années. 
               Excellence, qualité et respect de l'environnement.
             </p>
-            <div className="flex space-x-4">
-              <div className="w-8 h-8 bg-noble-yellow rounded-full flex items-center justify-center">
-                <Heart size={16} className="text-white" />
-              </div>
-              <span className="text-sm text-gray-400">Made with care in Paris</span>
-            </div>
           </div>
 
           {/* Liens rapides */}
@@ -49,7 +42,7 @@ const Footer = () => {
                 <li key={index}>
                   <a 
                     href={link.href}
-                    className="text-gray-400 hover:text-noble-yellow transition-colors duration-300"
+                    className="text-gray-300 hover:text-noble-yellow transition-colors duration-300"
                   >
                     {link.name}
                   </a>
@@ -63,7 +56,7 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-6 text-white">Nos services</h3>
             <ul className="space-y-3">
               {services.map((service, index) => (
-                <li key={index} className="text-gray-400 text-sm">
+                <li key={index} className="text-gray-300 text-sm">
                   {service}
                 </li>
               ))}
@@ -76,40 +69,37 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin size={16} className="text-sky-blue mt-1" />
-                <div className="text-sm text-gray-400">
-                  <div>123 Avenue de la République</div>
-                  <div>75011 Paris, France</div>
+                <div className="text-sm text-gray-300">
+                  <div>Bureau situé à côté du dépôt de ciment Zogbo (annexe Godomey)</div>
+                  <div>0272 BP 81</div>
+                  <div>Zogbo - Rép. Bénin</div>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-sky-blue" />
-                <span className="text-sm text-gray-400">01 42 34 56 78</span>
+                <span className="text-sm text-gray-300">(+229) 97 89 36 99</span>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-sky-blue" />
-                <span className="text-sm text-gray-400">contact@cica-noblesse.fr</span>
+                <span className="text-sm text-gray-300">contact@cica-noblesse.fr</span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Séparateur */}
         <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
             <div className="mb-4 md:mb-0">
-              © 2024 Cica Noblesse. Tous droits réservés.
-            </div>
-            <div className="flex space-x-6">
-              <a href="#" className="hover:text-noble-yellow transition-colors duration-300">
-                Mentions légales
-              </a>
-              <a href="#" className="hover:text-noble-yellow transition-colors duration-300">
-                Politique de confidentialité
-              </a>
-              <a href="#" className="hover:text-noble-yellow transition-colors duration-300">
-                CGV
+              © {new Date().getFullYear()} Cica Noblesse. Réalisé par{' '}
+              <a 
+                href="https://portfolio-cnkp.vercel.app" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-noble-yellow hover:text-yellow-500 transition-colors duration-300"
+              >
+                Ray Ague
               </a>
             </div>
           </div>

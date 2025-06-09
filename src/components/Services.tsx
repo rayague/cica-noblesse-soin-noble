@@ -1,4 +1,3 @@
-
 import { Shirt, Droplets, Sparkles, Clock, Shield, Award } from 'lucide-react';
 
 const Services = () => {
@@ -22,22 +21,10 @@ const Services = () => {
       features: ['Plis marqués', 'Finition sur mesure', 'Emballage soigné']
     },
     {
-      icon: Shield,
-      title: 'Détachage expert',
-      description: 'Élimination des taches les plus tenaces grâce à notre expertise et nos produits spécialisés.',
-      features: ['Taches anciennes', 'Produits écologiques', 'Garantie résultat']
-    },
-    {
       icon: Clock,
       title: 'Service express',
       description: 'Pour vos urgences, nous proposons un service rapide sans compromis sur la qualité.',
       features: ['24h chrono', 'Disponible 6j/7', 'Tarif préférentiel']
-    },
-    {
-      icon: Award,
-      title: 'Retouches couture',
-      description: 'Nos couturières expertes s\'occupent de vos retouches avec un savoir-faire artisanal.',
-      features: ['Ourlets', 'Reprises', 'Ajustements']
     }
   ];
 
@@ -53,7 +40,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <div 
               key={index}

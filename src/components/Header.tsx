@@ -1,39 +1,35 @@
-
-import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { useState } from 'react';
+import { images } from '@/assets';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navItems = [
     { name: 'Accueil', href: '#accueil' },
     { name: 'Services', href: '#services' },
     { name: 'Tarifs', href: '#tarifs' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Contact', href: '#contact' }
   ];
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-lg' 
-          : 'bg-transparent'
-      }`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-noble-yellow">
-            Cica Noblesse
+          <div className="flex items-center space-x-2">
+            <img 
+              src={images.logo}
+              alt="Cica Noblesse Logo" 
+              className="h-10 w-auto"
+              onError={(e) => {
+                console.error('Erreur de chargement du logo');
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+            <div className="text-2xl font-bold">
+              <span className="text-noble-yellow">Cica</span>{' '}
+              {/* <span className="text-sky-blue">Noblesse</span> */}
+            </div>
           </div>
 
           {/* Desktop Navigation */}

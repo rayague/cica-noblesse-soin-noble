@@ -1,4 +1,3 @@
-
 import { Check } from 'lucide-react';
 
 const Tarifs = () => {
@@ -96,18 +95,6 @@ const Tarifs = () => {
               </div>
             ))}
           </div>
-        </div>
-
-        <div className="text-center mt-12">
-          <p className="text-gray-600 mb-6">
-            * Tarifs TTC valables jusqu'au 31 décembre 2024. Devis gratuit pour les pièces exceptionnelles.
-          </p>
-          <a 
-            href="#contact"
-            className="bg-noble-yellow text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg inline-block"
-          >
-            Demander un devis
-          </a>
         </div>
       </div>
     </section>

@@ -1,48 +1,58 @@
-
 import { Sparkles, Star } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="accueil" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-noble-yellow-light to-yellow-100">
-      {/* Background decoration */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 animate-pulse">
-          <Sparkles size={60} className="text-noble-yellow" />
-        </div>
-        <div className="absolute top-40 right-20 animate-pulse delay-1000">
-          <Star size={40} className="text-sky-blue" />
-        </div>
-        <div className="absolute bottom-20 left-1/4 animate-pulse delay-500">
-          <Sparkles size={30} className="text-noble-yellow" />
-        </div>
-      </div>
+    <section 
+      id="accueil" 
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      {/* Image de fond avec flou */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/images/image1.jpg)',
+          filter: 'blur(4px)',
+          transform: 'scale(1.05)'
+        }}
+      />
+      
+      {/* Image de fond nette */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
+        style={{
+          backgroundImage: 'url(/images/image4.jpg)',
+          // clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0 100%)'
+        }}
+      />
+      
+      {/* Overlay pour améliorer la lisibilité */}
+      <div className="absolute inset-0 bg-gradient-to-b from-yellow-100/10 to-yellow-700/60"></div>
 
-      <div className="container mx-auto px-4 text-center relative z-10">
+      <div className="container mx-auto text-center px-4 relative z-10">
         <div className="animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-800">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 sm:mb-6 text-gray-800">
             <span className="text-noble-yellow">Cica</span>{' '}
             <span className="text-noble-yellow">Noblesse</span>
           </h1>
           
-          <p className="text-xl md:text-2xl mb-8 text-gray-700 font-light max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl mb-4 sm:mb-8 text-white font-light max-w-2xl mx-auto">
             Le soin noble de vos vêtements
           </p>
           
-          <p className="text-lg mb-12 text-gray-600 max-w-3xl mx-auto">
-            Depuis plus de 20 ans, nous prenons soin de vos vêtements avec l'excellence et le raffinement qu'ils méritent. 
-            Découvrez un service de pressing haut de gamme où chaque pièce est traitée avec la plus grande attention.
+          <p className="text-base sm:text-lg mb-8 sm:mb-12 text-white max-w-3xl mx-auto">
+            Depuis des années, nous traitons vos vêtements avec l'excellence et le raffinement qu'ils méritent dans notre pressing haut de gamme.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="#services"
-              className="bg-noble-yellow text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="bg-noble-yellow text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base"
             >
               Découvrir nos services
             </a>
             <a 
               href="#contact"
-              className="border-2 border-noble-yellow text-noble-yellow px-8 py-3 rounded-full font-semibold hover:bg-noble-yellow hover:text-white transition-all duration-300 transform hover:scale-105"
+              className="border-2 border-noble-yellow text-noble-yellow px-6 sm:px-8 py-2 sm:py-3 rounded-full font-semibold hover:bg-noble-yellow hover:text-white transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
             >
               Nous contacter
             </a>

@@ -1,4 +1,3 @@
-
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const Contact = () => {
@@ -6,19 +5,19 @@ const Contact = () => {
     {
       icon: MapPin,
       title: 'Adresse',
-      details: ['123 Avenue de la République', '75011 Paris, France'],
+      details: ['Bureau situé à côté du dépôt de ciment Zogbo (annexe Godomey)', '0272 BP 81', 'Zogbo - Rép. Bénin'],
       color: 'text-noble-yellow'
     },
     {
       icon: Phone,
       title: 'Téléphone',
-      details: ['01 42 34 56 78', '06 12 34 56 78 (Urgences)'],
+      details: ['(+229) 97 89 36 99', '(+229) 99 10 70 93', '(+229) 96 44 67 50'],
       color: 'text-sky-blue'
     },
     {
       icon: Mail,
-      title: 'Email',
-      details: ['contact@cica-noblesse.fr', 'service@cica-noblesse.fr'],
+      title: 'Informations légales',
+      details: ['RC 13-A-17728', 'IFU : 2201300990000'],
       color: 'text-noble-yellow'
     },
     {
@@ -61,7 +60,7 @@ const Contact = () => {
 
         <div className="text-center mt-12">
           <a 
-            href="tel:0142345678"
+            href="tel:+22997893699"
             className="bg-noble-yellow text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg inline-block mr-4"
           >
             Appelez-nous

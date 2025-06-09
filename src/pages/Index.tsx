@@ -1,9 +1,9 @@
-
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import Tarifs from '@/components/Tarifs';
 import Contact from '@/components/Contact';
+import Conditions from '@/components/Conditions';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -14,6 +14,7 @@ const Index = () => {
       <Services />
       <Tarifs />
       <Contact />
+      <Conditions />
       <Footer />
     </div>
   );
