@@ -25,8 +25,8 @@ const Footer = () => {
           {/* Logo et description */}
           <div className="lg:col-span-1">
             <div className="text-2xl font-bold mb-4">
-              <span className="text-noble-yellow">Cica</span>{' '}
-              <span className="text-sky-blue">Noblesse</span>
+              <span className="text-noble-blue">Cica</span>{' '}
+              <span className="text-noble-yellow">Noblesse Pressing</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Le soin noble de vos vêtements depuis plusieurs années. 
@@ -92,7 +92,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
             <div className="mb-4 md:mb-0">
-              © {new Date().getFullYear()} Cica Noblesse. Réalisé par{' '}
+              © {new Date().getFullYear()} Cica Noblesse Pressing. Réalisé par{' '}
               <a 
                 href="https://portfolio-cnkp.vercel.app" 
                 target="_blank" 

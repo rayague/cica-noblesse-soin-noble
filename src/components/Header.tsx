@@ -19,7 +19,7 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <img 
               src={images.logo}
-              alt="Cica Noblesse Logo" 
+              alt="Cica Noblesse Pressing Logo" 
               className="h-10 w-auto"
               onError={(e) => {
                 console.error('Erreur de chargement du logo');
@@ -27,8 +27,8 @@ const Header = () => {
               }}
             />
             <div className="text-2xl font-bold">
-              <span className="text-noble-yellow">Cica</span>{' '}
-              {/* <span className="text-sky-blue">Noblesse</span> */}
+              <span className="text-noble-blue">Cica</span>{' '}
+              <span className="text-noble-yellow">Noblesse Pressing</span>
             </div>
           </div>
 

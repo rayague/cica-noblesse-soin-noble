@@ -32,8 +32,9 @@ const Services = () => {
     <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
+          <img src="/images/shirts-4696379_1920.jpg" alt="Services illustration" className="mx-auto mb-6 w-20 h-20 rounded-xl shadow-lg" />
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-            Nos <span className="text-noble-yellow">Services</span>
+            <span className="text-noble-blue">Nos</span> <span className="text-noble-yellow">Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Une gamme complète de prestations pour prendre soin de tous vos vêtements avec l'excellence que vous méritez.
@@ -47,17 +48,17 @@ const Services = () => {
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 animate-scale-in"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="bg-noble-yellow-light w-16 h-16 rounded-xl flex items-center justify-center mb-6">
-                <service.icon size={32} className="text-noble-yellow" />
+              <div className="bg-sky-blue-light w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                <service.icon size={32} className="text-noble-blue" />
               </div>
               
-              <h3 className="text-xl font-bold mb-4 text-gray-800">{service.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-noble-blue">{service.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
               
               <ul className="space-y-2">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center text-sm text-gray-500">
-                    <div className="w-2 h-2 bg-noble-yellow rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-noble-blue rounded-full mr-3"></div>
                     {feature}
                   </li>
                 ))}

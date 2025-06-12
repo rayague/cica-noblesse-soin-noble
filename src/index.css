@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,6 +48,7 @@
     /* Custom colors for Cica Noblesse */
     --noble-yellow: 45 100% 60%;
     --noble-yellow-light: 45 100% 85%;
+    --noble-blue: 220 80% 55%;
     --sky-blue: 200 100% 80%;
     --sky-blue-light: 200 100% 90%;
   }

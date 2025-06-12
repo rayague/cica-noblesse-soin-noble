@@ -47,11 +47,11 @@ const Tarifs = () => {
   ];
 
   return (
-    <section id="tarifs" className="py-20 bg-gradient-to-b from-yellow-50 to-white">
+    <section id="tarifs" className="py-20 bg-gradient-to-b from-sky-blue-light to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-            Nos <span className="text-noble-yellow">Tarifs</span>
+            <span className="text-noble-blue">Nos</span> <span className="text-noble-yellow">Tarifs</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Des prix transparents et compétitifs pour des prestations de qualité exceptionnelle.
@@ -81,10 +81,13 @@ const Tarifs = () => {
         </div>
 
         {/* Avantages inclus */}
-        <div className="bg-noble-yellow-light rounded-2xl p-8 animate-fade-in">
-          <h3 className="text-2xl font-bold text-center mb-8 text-gray-800">
-            Avantages inclus dans tous nos services
-          </h3>
+        <div className="bg-sky-blue-light rounded-2xl p-8 animate-fade-in">
+          <div className="flex items-center justify-center mb-8 gap-4">
+            <img src="/images/ironing-403074_1280.jpg" alt="Avantages" className="w-10 h-10" />
+            <h3 className="text-2xl font-bold text-gray-800">
+              Avantages inclus dans tous nos services
+            </h3>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {avantages.map((avantage, index) => (
               <div key={index} className="flex items-center space-x-3">

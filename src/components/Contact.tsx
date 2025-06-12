@@ -32,8 +32,9 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gradient-to-b from-yellow-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
+          <img src="/images/contact-us-2418235_1920.jpg" alt="Contact illustration" className="mx-auto mb-6 w-20 h-20 rounded-xl shadow-lg" />
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-            Nous <span className="text-noble-yellow">contacter</span>
+            <span className="text-noble-blue">Nous</span> <span className="text-noble-yellow">contacter</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Une question ? Besoin d'un devis ? Notre équipe est à votre disposition pour vous accompagner.
@@ -59,18 +60,20 @@ const Contact = () => {
         </div>
 
         <div className="text-center mt-12">
-          <a 
-            href="tel:+22997893699"
-            className="bg-noble-yellow text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg inline-block mr-4"
-          >
-            Appelez-nous
-          </a>
-          <a 
-            href="mailto:contact@cica-noblesse.fr"
-            className="border-2 border-noble-yellow text-noble-yellow px-8 py-3 rounded-full font-semibold hover:bg-noble-yellow hover:text-white transition-all duration-300 transform hover:scale-105 inline-block"
-          >
-            Écrivez-nous
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="tel:+22997893699"
+              className="bg-noble-yellow text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg inline-block mr-4"
+            >
+              Appelez-nous
+            </a>
+            <a 
+              href="mailto:contact@cica-noblesse.fr"
+              className="border-2 border-noble-yellow text-noble-yellow px-8 py-3 rounded-full font-semibold hover:bg-noble-yellow hover:text-white transition-all duration-300 transform hover:scale-105 inline-block"
+            >
+              Écrivez-nous
+            </a>
+          </div>
         </div>
       </div>
     </section>
