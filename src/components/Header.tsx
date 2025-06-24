@@ -20,14 +20,14 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="relative">
-              <img src={images.logo} alt="Logo Cica Noblesse Pressing" className="w-12 h-12 rounded-full object-cover bg-white shadow" />
+              <img src="/images/cicawb.png" alt="Logo Cica Noblesse Pressing" className="w-12 h-12 rounded-full object-cover" />
             </div>
             <div>
               <h1 className="text-2xl font-bold">
-                <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Cica</span>{' '}
-                <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">Noblesse</span>
+                <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">Cica</span>{' '}
+                <span className="bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent">Noblesse</span>
               </h1>
-              <p className="text-xs text-gray-600">Pressing Premium</p>
+              <p className="text-xs text-white">Pressing Premium</p>
             </div>
           </div>
 

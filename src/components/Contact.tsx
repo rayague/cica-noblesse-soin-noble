@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
@@ -21,6 +22,22 @@ const Contact = () => {
       link: "#"
     }
   ];
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (name && email && message) {
+      const text = `Contact Cica Noblesse\nNom: ${name}\nEmail: ${email}\nMessage: ${message}`;
+      const url = `https://wa.me/22957083160?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+      setName('');
+      setEmail('');
+      setMessage('');
+    }
+  };
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -50,20 +67,20 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <form className="space-y-6">
+          <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Nom</label>
-              <input type="text" id="name" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Votre nom complet" />
+              <input type="text" id="name" value={name} onChange={e => setName(e.target.value)} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Votre nom complet" />
             </div>
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-              <input type="email" id="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Votre adresse email" />
+              <input type="email" id="email" value={email} onChange={e => setEmail(e.target.value)} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Votre adresse email" />
             </div>
             <div>
               <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-              <textarea id="message" rows={4} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Votre message..."></textarea>
+              <textarea id="message" rows={4} value={message} onChange={e => setMessage(e.target.value)} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Votre message..."></textarea>
             </div>
-            <button type="submit" className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+            <button type="submit" disabled={!(name && email && message)} className={`w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300 ${!(name && email && message) ? 'opacity-50 cursor-not-allowed' : ''}`}>
               Envoyer le message
             </button>
           </form>
