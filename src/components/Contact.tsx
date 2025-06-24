@@ -1,79 +1,72 @@
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const contactInfo = [
     {
-      icon: MapPin,
-      title: 'Adresse',
-      details: ['Bureau situé à côté du dépôt de ciment Zogbo (annexe Godomey)', '0272 BP 81', 'Zogbo - Rép. Bénin'],
-      color: 'text-noble-yellow'
+      icon: <Phone className="w-8 h-8 text-blue-600" />,
+      title: "Téléphone",
+      text: "+229 97 89 36 99",
+      link: "tel:+22997893699"
     },
     {
-      icon: Phone,
-      title: 'Téléphone',
-      details: ['(+229) 97 89 36 99', '(+229) 99 10 70 93', '(+229) 96 44 67 50'],
-      color: 'text-sky-blue'
+      icon: <Mail className="w-8 h-8 text-blue-600" />,
+      title: "Email",
+      text: "contact@cicanoblesse.com",
+      link: "mailto:contact@cicanoblesse.com"
     },
     {
-      icon: Mail,
-      title: 'Informations légales',
-      details: ['RC 13-A-17728', 'IFU : 2201300990000'],
-      color: 'text-noble-yellow'
-    },
-    {
-      icon: Clock,
-      title: 'Horaires',
-      details: ['Lun-Ven: 7h30 - 19h00', 'Sam: 8h00 - 17h00', 'Dim: Fermé'],
-      color: 'text-sky-blue'
+      icon: <MapPin className="w-8 h-8 text-blue-600" />,
+      title: "Adresse",
+      text: "Cotonou, Bénin",
+      link: "#"
     }
   ];
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-yellow-50 to-white">
+    <section id="contact" className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <img src="/images/contact-us-2418235_1920.jpg" alt="Contact illustration" className="mx-auto mb-6 w-20 h-20 rounded-xl shadow-lg" />
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">
-            <span className="text-noble-blue">Nous</span> <span className="text-noble-yellow">contacter</span>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Contactez</span>-{' '}
+            <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">nous</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Une question ? Besoin d'un devis ? Notre équipe est à votre disposition pour vous accompagner.
-          </p>
+          <p className="text-xl text-gray-600">Nous sommes à votre disposition pour toute question</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {contactInfo.map((info, index) => (
-            <div 
-              key={index}
-              className="flex flex-col items-center text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 animate-scale-in"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className={`${info.color} mb-4`}>
-                <info.icon size={32} />
-              </div>
-              <h4 className="font-bold text-lg text-gray-800 mb-2">{info.title}</h4>
-              {info.details.map((detail, idx) => (
-                <p key={idx} className="text-gray-600 text-sm">{detail}</p>
-              ))}
-            </div>
-          ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="tel:+22997893699"
-              className="bg-noble-yellow text-white px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg inline-block mr-4"
-            >
-              Appelez-nous
-            </a>
-            <a 
-              href="mailto:contact@cica-noblesse.fr"
-              className="border-2 border-noble-yellow text-noble-yellow px-8 py-3 rounded-full font-semibold hover:bg-noble-yellow hover:text-white transition-all duration-300 transform hover:scale-105 inline-block"
-            >
-              Écrivez-nous
-            </a>
+        <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-2xl p-8 md:p-12 grid md:grid-cols-2 gap-12 items-center">
+          {/* Contact Info */}
+          <div className="space-y-8">
+            {contactInfo.map((item, index) => (
+              <a href={item.link} key={index} className="flex items-center space-x-6 group">
+                <div className="bg-blue-100 p-4 rounded-full group-hover:bg-yellow-100 transition-colors duration-300">
+                  {item.icon}
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800">{item.title}</h3>
+                  <p className="text-lg text-gray-600 group-hover:text-yellow-600 transition-colors duration-300">{item.text}</p>
+                </div>
+              </a>
+            ))}
           </div>
+
+          {/* Contact Form */}
+          <form className="space-y-6">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Nom</label>
+              <input type="text" id="name" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Votre nom complet" />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <input type="email" id="email" className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Votre adresse email" />
+            </div>
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <textarea id="message" rows={4} className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Votre message..."></textarea>
+            </div>
+            <button type="submit" className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+              Envoyer le message
+            </button>
+          </form>
         </div>
       </div>
     </section>

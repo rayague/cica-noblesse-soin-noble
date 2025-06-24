@@ -1,108 +1,54 @@
-import { Heart, MapPin, Phone, Mail } from 'lucide-react';
+import { Instagram, Facebook, Twitter } from 'lucide-react';
 
 const Footer = () => {
-  const quickLinks = [
-    { name: 'Accueil', href: '#accueil' },
-    { name: 'Services', href: '#services' },
-    { name: 'Tarifs', href: '#tarifs' },
-    { name: 'Contact', href: '#contact' }
-  ];
-
-  const services = [
-    'Nettoyage à sec',
-    'Lavage aqueux',
-    'Repassage professionnel',
-    'Service express'
-  ];
-
   return (
-    <footer className="relative bg-gray-900 text-white py-16">
-      {/* Overlay pour améliorer la lisibilité */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-900 to-gray-800 opacity-90"></div>
-      
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          {/* Logo et description */}
-          <div className="lg:col-span-1">
-            <div className="text-2xl font-bold mb-4">
-              <span className="text-noble-blue">Cica</span>{' '}
-              <span className="text-noble-yellow">Noblesse Pressing</span>
-            </div>
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              Le soin noble de vos vêtements depuis plusieurs années. 
-              Excellence, qualité et respect de l'environnement.
-            </p>
+    <footer className="bg-slate-900 text-white">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          {/* About */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">Cica</span>{' '}
+              <span className="bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent">Noblesse</span>
+            </h3>
+            <p className="text-gray-300">Votre partenaire de confiance pour un soin premium de vos vêtements.</p>
           </div>
 
-          {/* Liens rapides */}
+          {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-6 text-white">Navigation</h3>
-            <ul className="space-y-3">
-              {quickLinks.map((link, index) => (
-                <li key={index}>
-                  <a 
-                    href={link.href}
-                    className="text-gray-300 hover:text-noble-yellow transition-colors duration-300"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
+            <h4 className="text-lg font-semibold mb-4">Liens Rapides</h4>
+            <ul className="space-y-2">
+              <li><a href="#accueil" className="text-gray-300 hover:text-yellow-400 transition-colors">Accueil</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-yellow-400 transition-colors">Services</a></li>
+              <li><a href="#tarifs" className="text-gray-300 hover:text-yellow-400 transition-colors">Tarifs</a></li>
+              <li><a href="#contact" className="text-gray-300 hover:text-yellow-400 transition-colors">Contact</a></li>
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-bold mb-6 text-white">Nos services</h3>
-            <ul className="space-y-3">
-              {services.map((service, index) => (
-                <li key={index} className="text-gray-300 text-sm">
-                  {service}
-                </li>
-              ))}
+            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+            <ul className="space-y-2 text-gray-300">
+              <li>Email: contact@cicanoblesse.com</li>
+              <li>Téléphone: +229 97 89 36 99</li>
+              <li>Adresse: Cotonou, Bénin</li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Social Media */}
           <div>
-            <h3 className="text-lg font-bold mb-6 text-white">Contact</h3>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <MapPin size={16} className="text-sky-blue mt-1" />
-                <div className="text-sm text-gray-300">
-                  <div>Bureau situé à côté du dépôt de ciment Zogbo (annexe Godomey)</div>
-                  <div>0272 BP 81</div>
-                  <div>Zogbo - Rép. Bénin</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <Phone size={16} className="text-sky-blue" />
-                <span className="text-sm text-gray-300">(+229) 97 89 36 99</span>
-              </div>
-              
-              <div className="flex items-center space-x-3">
-                <Mail size={16} className="text-sky-blue" />
-                <span className="text-sm text-gray-300">contact@cica-noblesse.fr</span>
-              </div>
+            <h4 className="text-lg font-semibold mb-4">Suivez-nous</h4>
+            <div className="flex space-x-4">
+              <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors"><Facebook size={20} /></a>
+              <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors"><Twitter size={20} /></a>
+              <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors"><Instagram size={20} /></a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
-            <div className="mb-4 md:mb-0">
-              © {new Date().getFullYear()} Cica Noblesse Pressing. Réalisé par{' '}
-              <a 
-                href="https://portfolio-cnkp.vercel.app" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-noble-yellow hover:text-yellow-500 transition-colors duration-300"
-              >
-                Ray Ague
-              </a>
-            </div>
-          </div>
+        <div className="border-t border-blue-800 pt-8 text-center text-gray-400 text-sm">
+          <p>&copy; {new Date().getFullYear()} Cica Noblesse Pressing. Tous droits réservés.</p>
+          <p className="mt-2">Site réalisé par <a href="https://portfolio-cnkp.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition-colors">Ray Ague</a></p>
         </div>
       </div>
     </footer>

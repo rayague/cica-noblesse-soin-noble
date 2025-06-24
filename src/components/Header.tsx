@@ -1,70 +1,69 @@
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
 import { images } from '@/assets';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const navItems = [
-    { name: 'Accueil', href: '#accueil' },
-    { name: 'Services', href: '#services' },
-    { name: 'Tarifs', href: '#tarifs' },
-    { name: 'Contact', href: '#contact' }
-  ];
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <img 
-              src={images.logo}
-              alt="Cica Noblesse Pressing Logo" 
-              className="h-10 w-auto"
-              onError={(e) => {
-                console.error('Erreur de chargement du logo');
-                e.currentTarget.style.display = 'none';
-              }}
-            />
-            <div className="text-2xl font-bold">
-              <span className="text-noble-blue">Cica</span>{' '}
-              <span className="text-noble-yellow">Noblesse Pressing</span>
+            <div className="relative">
+              <img src={images.logo} alt="Logo Cica Noblesse Pressing" className="w-12 h-12 rounded-full object-cover bg-white shadow" />
+            </div>
+            <div>
+              <h1 className="text-2xl font-bold">
+                <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Cica</span>{' '}
+                <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">Noblesse</span>
+              </h1>
+              <p className="text-xs text-gray-600">Pressing Premium</p>
             </div>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
+            {['Accueil', 'Services', 'Tarifs', 'Contact'].map((item) => (
               <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-700 hover:text-noble-yellow transition-colors duration-300 font-medium"
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                className={`font-medium transition-colors duration-300 ${
+                  scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-yellow-400'
+                }`}
               >
-                {item.name}
+                {item}
               </a>
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-gray-700"
+            className={`md:hidden ${scrolled ? 'text-gray-700' : 'text-white'}`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
-
-        {/* Mobile Navigation */}
+        
+        {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 animate-fade-in">
-            {navItems.map((item) => (
+          <div className="md:hidden mt-4 bg-white rounded-lg p-4">
+            {['Accueil', 'Services', 'Tarifs', 'Contact'].map((item) => (
               <a
-                key={item.name}
-                href={item.href}
-                className="block py-2 text-gray-700 hover:text-noble-yellow transition-colors duration-300"
+                key={item}
+                href={`#${item.toLowerCase()}`}
                 onClick={() => setIsMenuOpen(false)}
+                className="block py-2 text-gray-700 hover:text-blue-600"
               >
-                {item.name}
+                {item}
               </a>
             ))}
           </div>
