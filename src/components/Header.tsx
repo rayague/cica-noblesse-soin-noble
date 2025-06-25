@@ -24,10 +24,10 @@ const Header = () => {
             </div>
             <div>
               <h1 className="text-2xl font-bold">
-                <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">Cica</span>{' '}
-                <span className="bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent">Noblesse</span>
+                <span className="bg-yellow-500 bg-clip-text text-transparent">Cica</span>{' '}
+                <span className="bg-yellow-500 bg-clip-text text-transparent">Noblesse</span>
               </h1>
-              <p className="text-xs text-white">Pressing Premium</p>
+              <p className="text-xs text-white">Pressing Qualité</p>
             </div>
           </div>
 

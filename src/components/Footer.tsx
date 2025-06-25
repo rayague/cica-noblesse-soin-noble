@@ -33,7 +33,7 @@ const Footer = () => {
               <li>Téléphone: +229 97 89 36 99</li>
               <li>Adresse: Cotonou, Bénin</li>
               <li className="mt-2 font-semibold text-white">Horaires d'ouverture :</li>
-              <li><span className="font-medium text-yellow-400">Autres jours</span> : 7heures 50 - 21heures</li>
+              <li><span className="font-medium text-yellow-400">Lundi au Samedi</span> : 7heures 50 - 21heures</li>
               <li><span className="font-medium text-yellow-400">Dimanche</span> : 11heures - 19heures</li>
             </ul>
           </div>

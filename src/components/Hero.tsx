@@ -6,7 +6,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1555529771-835f59fc5efe?w=1920&q=80" 
+          src="/images/retouche-cica2.jpg" 
           alt="Tissu de haute qualité" 
           className="w-full h-full object-cover"
         />
