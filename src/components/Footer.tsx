@@ -30,7 +30,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-300">
               <li>Email: contact@cicanoblesse.com</li>
-              <li>Téléphone: +229 97 89 36 99</li>
+              <li>Téléphone: (+229) 01 97 89 36 99 / 01 96 44 67 50 / 01 99 10 70 93</li>
               <li>Adresse: Cotonou, Bénin</li>
               <li className="mt-2 font-semibold text-white">Horaires d'ouverture :</li>
               <li><span className="font-medium text-yellow-400">Lundi au Samedi</span> : 7heures 50 - 21heures</li>
@@ -43,7 +43,6 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Suivez-nous</h4>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors"><Twitter size={20} /></a>
               <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors"><Instagram size={20} /></a>
             </div>
           </div>
@@ -51,7 +50,7 @@ const Footer = () => {
 
         <div className="border-t border-blue-800 pt-8 text-center text-gray-400 text-sm">
           <p>&copy; {new Date().getFullYear()} Cica Noblesse Pressing. Tous droits réservés.</p>
-          <p className="mt-2">Site réalisé par <a href="https://portfolio-cnkp.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400 transition-colors">Ray Ague</a></p>
+          <p className="mt-2">Réalisé par <a href="https://portfolio-cnkp.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 text-yellow-400 transition-colors">Ray Ague</a></p>
         </div>
       </div>
     </footer>

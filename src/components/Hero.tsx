@@ -1,15 +1,38 @@
+import { useState, useEffect } from 'react';
 import { ChevronRight } from 'lucide-react';
 
+const images = [
+  '/images/retouche-cica2.jpg',
+  '/images/retouche-cica1.png'
+];
+
 const Hero = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prevIndex) =>
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3000); 
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section id="accueil" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image Carousel */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/images/retouche-cica2.jpg" 
-          alt="Tissu de haute qualité" 
-          className="w-full h-full object-cover"
-        />
+        {images.map((src, index) => (
+          <img
+            key={src}
+            src={src}
+            alt="Tissu de haute qualité"
+            className={`w-full h-full object-cover absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+          />
+        ))}
         <div className="absolute inset-0 bg-slate-800 opacity-50"></div>
       </div>
 

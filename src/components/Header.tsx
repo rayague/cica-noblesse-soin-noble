@@ -27,7 +27,7 @@ const Header = () => {
                 <span className="bg-yellow-500 bg-clip-text text-transparent">Cica</span>{' '}
                 <span className="bg-yellow-500 bg-clip-text text-transparent">Noblesse</span>
               </h1>
-              <p className="text-xs text-white">Pressing Qualité</p>
+              <p className="text-xs text-sky-600 font-bold">Pressing de Qualité</p>
             </div>
           </div>
 

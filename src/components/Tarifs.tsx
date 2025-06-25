@@ -25,10 +25,9 @@ const Tarifs = () => {
     {
       icon: <Gift className="w-6 h-6" />,
       title: "Programme de fidélité",
-      description: [
-        "Retouche ourlet gratuit",
-        "Service express +100%"
-      ]
+      description: 
+        "Réduction allant jusqu'à 15% et des remises spéciales cadeaux",
+      
     },
     {
       icon: <Scissors className="w-6 h-6" />,
