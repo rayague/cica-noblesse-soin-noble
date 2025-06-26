@@ -27,7 +27,11 @@ const Header = () => {
                 <span className="bg-yellow-500 bg-clip-text text-transparent">Cica</span>{' '}
                 <span className="bg-yellow-500 bg-clip-text text-transparent">Noblesse</span>
               </h1>
-              <p className="text-xs text-sky-600 font-bold">Pressing de Qualité</p>
+              <p
+                className={`text-base drop-shadow-md bg-white/30 backdrop-blur-xl px-2 rounded-lg transition-colors duration-300 ${scrolled ? 'text-black' : 'text-white'}`}
+              >
+                Pressing de Qualité
+              </p>
             </div>
           </div>
 

@@ -41,8 +41,7 @@ const Tarifs = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Pourquoi</span>{' '}
-            <span className="bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">nous choisir ?</span>
+            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Pourquoi nous choisir ?</span>
           </h2>
           <p className="text-xl text-gray-600">Nos avantages exclusifs pour un service client inégalé</p>
         </div>
