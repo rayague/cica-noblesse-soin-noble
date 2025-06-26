@@ -69,53 +69,61 @@ const Tarifs = () => {
         </div>
 
         <div className="mt-16 text-center">
-          <a href="#contact" className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center gap-2">
+          <a href="#tarifs-detailles" className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300 inline-flex items-center gap-2">
             Voir nos tarifs détaillés <ArrowRight className="w-5 h-5" />
           </a>
         </div>
 
-        <div className="mt-20 flex flex-col items-center gap-12">
-          <div className="w-full max-w-2xl bg-blue-50 rounded-2xl shadow-lg p-4 sm:p-8">
-            <h3 className="text-xl font-bold mb-4 text-gray-800 text-center">Vêtements homme</h3>
-            <div className="overflow-x-auto">
-              <table className="min-w-full rounded-xl overflow-hidden">
-                <thead>
-                  <tr className="bg-blue-100 text-blue-900">
-                    <th className="px-4 py-3 text-left font-semibold text-base">Article</th>
-                    <th className="px-4 py-3 text-right font-semibold text-base">Prix</th>
-                  </tr>
-                </thead>
-                <tbody className="text-gray-700 divide-y divide-blue-100">
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Chemise</td><td className="px-4 py-2 text-right">600 FCFA</td></tr>
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Pantalon</td><td className="px-4 py-2 text-right">700 FCFA</td></tr>
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Costume 2 pièces</td><td className="px-4 py-2 text-right">2 500 FCFA</td></tr>
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Costume 3 pièces</td><td className="px-4 py-2 text-right">3 000 / 3 500 FCFA</td></tr>
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Veste / Blazer</td><td className="px-4 py-2 text-right">1 500 FCFA</td></tr>
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Complet (Lessi-Bazin-Pagne etc..)</td><td className="px-4 py-2 text-right">1 000 FCFA</td></tr>
-                </tbody>
-              </table>
-            </div>
+        <div id="tarifs-detailles" className="mt-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-gray-800">
+              <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Tarifs du Service Complet</span>
+            </h3>
+            <p className="text-lg text-gray-600 mt-2">Lavage et repassage inclus pour un soin impeccable.</p>
           </div>
-          <div className="w-full max-w-2xl bg-blue-50 rounded-2xl shadow-lg p-4 sm:p-8">
-            <h3 className="text-xl font-bold mb-4 text-gray-800 text-center">Vêtements femme</h3>
-            <div className="overflow-x-auto">
-              <table className="min-w-full rounded-xl overflow-hidden">
-                <thead>
-                  <tr className="bg-blue-100 text-blue-900">
-                    <th className="px-4 py-3 text-left font-semibold text-base">Article</th>
-                    <th className="px-4 py-3 text-right font-semibold text-base">Prix</th>
-                  </tr>
-                </thead>
-                <tbody className="text-gray-700 divide-y divide-blue-100">
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Chemisier</td><td className="px-4 py-2 text-right">600 FCFA</td></tr>
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Pantalon (femme)</td><td className="px-4 py-2 text-right">700 FCFA</td></tr>
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Robe simple</td><td className="px-4 py-2 text-right">800 / 1 000 FCFA</td></tr>
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Robe de soirée</td><td className="px-4 py-2 text-right">1 500 / 2 000 / 3 000 FCFA</td></tr>
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Jupe</td><td className="px-4 py-2 text-right">500 / 700 FCFA</td></tr>
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Robe Bazin-Lessi-pagne-guipur +pierre</td><td className="px-4 py-2 text-right">1 500 FCFA</td></tr>
-                  <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Complet (Lessi-Bazin-Pagne)</td><td className="px-4 py-2 text-right">1 000 / 1 500 FCFA</td></tr>
-                </tbody>
-              </table>
+          <div className="flex flex-col lg:flex-row justify-center items-stretch gap-8">
+            <div className="w-full lg:flex-1 bg-blue-50 rounded-2xl shadow-lg p-4 sm:p-8">
+              <h3 className="text-xl font-bold mb-4 text-gray-800 text-center">Vêtements homme</h3>
+              <div className="overflow-x-auto">
+                <table className="min-w-full rounded-xl overflow-hidden">
+                  <thead>
+                    <tr className="bg-blue-100 text-blue-900">
+                      <th className="px-4 py-3 text-left font-semibold text-base">Article</th>
+                      <th className="px-4 py-3 text-right font-semibold text-base">Prix</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-gray-700 divide-y divide-blue-100">
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Chemise</td><td className="px-4 py-2 text-right">600 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Pantalon</td><td className="px-4 py-2 text-right">700 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Costume 2 pièces</td><td className="px-4 py-2 text-right">2 500 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Costume 3 pièces</td><td className="px-4 py-2 text-right">3 000 / 3 500 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Veste / Blazer</td><td className="px-4 py-2 text-right">1 500 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Complet (Lessi-Bazin-Pagne etc..)</td><td className="px-4 py-2 text-right">1 000 FCFA</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div className="w-full lg:flex-1 bg-blue-50 rounded-2xl shadow-lg p-4 sm:p-8">
+              <h3 className="text-xl font-bold mb-4 text-gray-800 text-center">Vêtements femme</h3>
+              <div className="overflow-x-auto">
+                <table className="min-w-full rounded-xl overflow-hidden">
+                  <thead>
+                    <tr className="bg-blue-100 text-blue-900">
+                      <th className="px-4 py-3 text-left font-semibold text-base">Article</th>
+                      <th className="px-4 py-3 text-right font-semibold text-base">Prix</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-gray-700 divide-y divide-blue-100">
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Chemisier</td><td className="px-4 py-2 text-right">600 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Pantalon (femme)</td><td className="px-4 py-2 text-right">700 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Robe simple</td><td className="px-4 py-2 text-right">800 / 1 000 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Robe de soirée</td><td className="px-4 py-2 text-right">1 500 / 2 000 / 3 000 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Jupe</td><td className="px-4 py-2 text-right">500 / 700 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Robe Bazin-Lessi-pagne-guipur +pierre</td><td className="px-4 py-2 text-right">1 500 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Complet (Lessi-Bazin-Pagne)</td><td className="px-4 py-2 text-right">1 000 / 1 500 FCFA</td></tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
