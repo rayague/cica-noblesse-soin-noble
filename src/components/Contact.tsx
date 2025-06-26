@@ -44,9 +44,9 @@ const Contact = () => {
       <div className="container mx-auto px-4 w-full max-w-full box-border">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Contactez-nous</span>
+            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Contactez-nous !</span>
           </h2>
-          <p className="text-xl text-gray-600">Nous sommes à votre disposition pour toute question</p>
+          <p className="text-xl text-gray-600">Nous sommes à votre disposition pour toute question.</p>
         </div>
 
         <div className="max-w-6xl mx-auto bg-white rounded-2xl shadow-2xl p-8 md:p-12 grid md:grid-cols-2 gap-12 items-center min-w-0 w-full overflow-hidden box-border">
