@@ -5,34 +5,34 @@ const Tarifs = () => {
     {
       icon: <Truck className="w-6 h-6" />,
       title: "Livraison à Domicile",
-      description: "Service de livraison disponible dans toute la zone"
+      description: "Service de livraison disponible dans toute la zone."
     },
     {
       icon: <Home className="w-6 h-6" />,
       title: "Collecte à Domicile",
-      description: "Nous venons chercher vos vêtements chez vous"
+      description: "Nous venons chercher vos vêtements chez vous."
     },
     {
       icon: <Bell className="w-6 h-6" />,
       title: "Notifications Automatiques",
-      description: "Soyez informé dès que vos vêtements sont prêts"
+      description: "Soyez informé dès que vos vêtements sont prêts."
     },
     {
       icon: <FileText className="w-6 h-6" />,
       title: "Factures Digitales",
-      description: "Recevez vos factures physiquement ou en ligne"
+      description: "Recevez vos factures physiquement ou en ligne."
     },
     {
       icon: <Gift className="w-6 h-6" />,
       title: "Programme de fidélité",
       description: 
-        "Réduction allant jusqu'à 15% et des remises spéciales cadeaux",
+        "Réduction allant jusqu'à 15% et des remises spéciales cadeaux.",
       
     },
     {
       icon: <Scissors className="w-6 h-6" />,
       title: "Retouches Offertes*",
-      description: "Service de retouche gratuit selon l'ampleur des travaux"
+      description: "Service de retouche gratuit selon l'ampleur des travaux."
     }
   ];
   

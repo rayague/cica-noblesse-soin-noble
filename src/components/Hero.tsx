@@ -14,7 +14,7 @@ const Hero = () => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000); 
+    }, 8000); 
 
     return () => clearInterval(timer);
   }, []);
@@ -40,12 +40,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 md:p-12 border border-white/20 shadow-2xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 text-white leading-tight">
-              L'art du soin textile
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 text-white leading-tight">
+            Expérience, élégance et fidélité <br />
+            15 ans d’expertise au service de votre linge
             </h1>
             <p className="text-md sm:text-lg text-gray-200 mb-8">
-              Confiez-nous vos vêtements les plus précieux. Nous leur redonnons vie avec un savoir-faire inégalé et une passion pour la perfection.
-            </p>
+            Nos clients nous font confiance depuis des décennies pour préserver la beauté et la longévité de leurs vêtements, grâce à un savoir-faire exigeant et un service attentionné.            </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#services" className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base">

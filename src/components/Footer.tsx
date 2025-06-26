@@ -30,11 +30,11 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-300">
               <li>Email: contact@cicanoblesse.com</li>
-              <li>Téléphone: (+229) 01 97 89 36 99 / 01 96 44 67 50 / 01 99 10 70 93</li>
+              <li>Téléphone: (+229) 01 97 89 36 99 <br />/ 01 96 44 67 50 / 01 99 10 70 93</li>
               <li>Adresse: Cotonou, Bénin</li>
               <li className="mt-2 font-semibold text-white">Horaires d'ouverture :</li>
-              <li><span className="font-medium text-yellow-400">Lundi au Samedi</span> : 7heures 50 - 21heures</li>
-              <li><span className="font-medium text-yellow-400">Dimanche</span> : 11heures - 19heures</li>
+              <li><span className="font-medium text-yellow-400">Lundi au Samedi</span> : 7h 50 - 21h</li>
+              <li><span className="font-medium text-yellow-400">Dimanche</span> : 11h - 19h</li>
             </ul>
           </div>
 

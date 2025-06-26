@@ -22,43 +22,43 @@ const Services = () => {
     {
       icon: <Droplets className="w-8 h-8" />,
       title: "Lavage Simple",
-      description: "Nettoyage en profondeur de vos vêtements du quotidien",
+      description: "Nettoyage en profondeur de vos vêtements du quotidien.",
       image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=400"
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
       title: "Lavage à Sec",
-      description: "Traitement délicat pour vos tissus les plus précieux",
+      description: "Traitement délicat pour vos tissus les plus précieux.",
       image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400"
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Service Complet",
-      description: "Lavage + Repassage pour un résultat impeccable",
+      description: "Lavage + Repassage pour un résultat impeccable.",
       image: "https://images.unsplash.com/photo-1489274495757-95c7c837b101?w=400"
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Repassage",
-      description: "Finition professionnelle pour une tenue parfaite",
+      description: "Finition professionnelle pour une tenue parfaite.",
       image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400"
     },
     {
       icon: <Droplets className="w-8 h-8" />,
       title: "Traitement de Taches",
-      description: "Élimination experte des taches les plus tenaces",
+      description: "Élimination experte des taches les plus tenaces.",
       image: "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=400"
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
       title: "Blanchissage",
-      description: "Redonnez l'éclat d'origine à vos vêtements blancs",
+      description: "Redonnez l'éclat d'origine à vos vêtements blancs.",
       image: "https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?w=400"
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Service Express",
-      description: "Vos vêtements prêts en moins de 24h chrono",
+      description: "Vos vêtements prêts en moins de 24h chrono.",
       image: "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?w=400"
     }
   ];
