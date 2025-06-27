@@ -76,7 +76,7 @@ const Tarifs = () => {
 
         <div id="tarifs-detailles" className="mt-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-800">
+            <h3 className="text-4xl md:text-5xl font-bold mb-12">
               <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Tarifs du Service Complet</span>
             </h3>
             <p className="text-lg text-gray-600 mt-2">Lavage et repassage inclus pour un soin impeccable.</p>

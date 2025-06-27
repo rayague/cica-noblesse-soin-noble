@@ -1,6 +1,13 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, MapPin, Home, Sparkles, Tag, Mail } from 'lucide-react';
 import { images } from '@/assets';
+
+const navLinks = [
+  { name: 'Accueil', href: '#accueil', icon: <Home className="w-5 h-5 mr-2" /> },
+  { name: 'Services', href: '#services', icon: <Sparkles className="w-5 h-5 mr-2" /> },
+  { name: 'Tarifs', href: '#tarifs', icon: <Tag className="w-5 h-5 mr-2" /> },
+  { name: 'Contact', href: '#contact', icon: <Mail className="w-5 h-5 mr-2" /> },
+];
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,25 +35,35 @@ const Header = () => {
                 <span className="bg-yellow-500 bg-clip-text text-transparent">Noblesse</span>
               </h1>
               <p
-                className={`text-base drop-shadow-md bg-white/30 backdrop-blur-xl px-2 rounded-lg transition-colors duration-300 ${scrolled ? 'text-black' : 'text-white'}`}
+                className={`text-base drop-shadow-md bg-white/20 backdrop-blur-sm px-3 py-1 rounded-lg transition-colors duration-300 ${scrolled ? 'text-black' : 'text-white'}`}
               >
                 Pressing de Qualité
               </p>
             </div>
           </div>
 
-          <div className="hidden md:flex space-x-8">
-            {['Accueil', 'Services', 'Tarifs', 'Contact'].map((item) => (
+          <div className="hidden md:flex items-center space-x-8">
+            {navLinks.map((item) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className={`font-medium transition-colors duration-300 ${
+                key={item.name}
+                href={item.href}
+                className={`font-medium flex items-center transition-colors duration-300 ${
                   scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-yellow-400'
                 }`}
               >
-                {item}
+                {item.icon}
+                {item.name}
               </a>
             ))}
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Cotonou+Bénin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-4 inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold px-4 py-2 rounded-full shadow hover:from-yellow-500 hover:to-yellow-600 hover:text-white transition-all duration-300"
+            >
+              <MapPin className="w-5 h-5" />
+              Itinéraire
+            </a>
           </div>
 
           <button
@@ -60,16 +77,26 @@ const Header = () => {
         {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 bg-white rounded-lg p-4">
-            {['Accueil', 'Services', 'Tarifs', 'Contact'].map((item) => (
+            {navLinks.map((item) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={item.name}
+                href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="block py-2 text-gray-700 hover:text-blue-600"
+                className="block py-2 text-gray-700 hover:text-blue-600 flex items-center"
               >
-                {item}
+                {item.icon}
+                {item.name}
               </a>
             ))}
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Cotonou+Bénin"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold px-4 py-2 rounded-full shadow hover:from-yellow-500 hover:to-yellow-600 hover:text-white transition-all duration-300 justify-center"
+            >
+              <MapPin className="w-5 h-5" />
+              Itinéraire
+            </a>
           </div>
         )}
       </nav>
