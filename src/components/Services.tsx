@@ -42,7 +42,7 @@ const Services = () => {
       icon: <Zap className="w-8 h-8" />,
       title: "Repassage",
       description: "Finition professionnelle pour une tenue parfaite.",
-      image: "https://images.unsplash.com/photo-1489274495757-95c7c837b101?w=400"
+      image: "/images/repassage.jpg"
     },
     {
       icon: <Droplets className="w-8 h-8" />,
