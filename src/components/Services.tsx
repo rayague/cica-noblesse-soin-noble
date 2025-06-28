@@ -60,7 +60,7 @@ const Services = () => {
       icon: <Zap className="w-8 h-8" />,
       title: "Service Express",
       description: "Vos vêtements prêts en moins de 24h chrono.",
-      image: "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?w=400"
+      image: "/images/service-express.jpg"
     }
   ];
   
