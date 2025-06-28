@@ -2,7 +2,7 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Rosine Sessou",
+    name: "Rosine SESSOU",
     role: "Cliente fidèle",
     avatar: "https://images.pexels.com/photos/4241328/pexels-photo-4241328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     comment:
