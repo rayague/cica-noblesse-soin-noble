@@ -2,28 +2,27 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Amina Diallo",
+    name: "Rosine Gangbé",
     role: "Cliente fidèle",
     avatar: "https://images.pexels.com/photos/4241328/pexels-photo-4241328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     comment:
       "Un service impeccable ! Mes robes de soirée sont toujours traitées avec le plus grand soin. Cica Noblesse est devenu mon pressing de confiance.",
   },
   {
-    name: "Moussa Traoré",
+    name: "Sagbo Djogbe",
     role: "Professionnel exigeant",
     avatar: "https://images.pexels.com/photos/2218786/pexels-photo-2218786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     comment:
       "La qualité du repassage est exceptionnelle. Mes chemises sont toujours parfaites, ce qui est essentiel pour mon travail. Je recommande vivement.",
   },
   {
-    name: "Fatou Camara",
+    name: "Fatima Dagbe",
     role: "Jeune maman",
     avatar: "https://images.pexels.com/photos/3779760/pexels-photo-3779760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     comment:
-      "Avec un bébé, le linge s'accumule vite ! Cica Noblesse me sauve la vie avec un service rapide, efficace et d'une propreté irréprochable.",
+      "énantchè nou mi, Cica Noblesse Oyééééé !!!!!",
   },
 ];
-
 const Testimonials = () => {
   return (
     <section className="bg-slate-50 py-16 sm:py-24">
@@ -49,11 +48,11 @@ const Testimonials = () => {
                   "{testimonial.comment}"
                 </p>
                 <div className="flex items-center">
-                  <img
+                  {/* <img
                     className="w-12 h-12 rounded-full object-cover mr-4"
                     src={testimonial.avatar}
                     alt={testimonial.name}
-                  />
+                  /> */}
                   <div>
                     <p className="font-bold text-gray-800">
                       {testimonial.name}

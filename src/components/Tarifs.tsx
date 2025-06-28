@@ -31,7 +31,7 @@ const Tarifs = () => {
     },
     {
       icon: <Scissors className="w-6 h-6" />,
-      title: "Retouches Offertes*",
+      title: "Retouches Offertes",
       description: "Service de retouche gratuit selon l'ampleur des travaux."
     }
   ];
