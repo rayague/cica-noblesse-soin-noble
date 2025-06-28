@@ -20,7 +20,7 @@ const Contact = () => {
       icon: <MapPin className="w-8 h-8 text-blue-600" />,
       title: "Adresse",
       text: "Cotonou, Bénin",
-      link: "https://www.google.com/maps/search/?api=1&query=Cotonou+Bénin",
+      link: "https://maps.apple.com/place?address=Avenue%20du%20Renouveau,%20Cotonou,%20B%C3%A9nin&coordinate=6.389726,2.387465&name=CICA%20NOBLESSE%20PRESSING&place-id=IFAB0E8D741913B5D&map=explore",
       subtext: "Cliquez pour voir sur la carte"
     }
   ];
