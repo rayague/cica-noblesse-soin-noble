@@ -5,10 +5,10 @@ const Services = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const serviceImages = [
-    "/public/images/anton-savinov-3rpjs5qwD_U-unsplash.jpg",
-    "/public/images/dan-lefebvre-APUvZYCjPJ0-unsplash.jpg",
-    "/public/images/close-up-hands-washing-laundry.jpg",
-    "/public/images/m0851---FH4Uo2PYA-unsplash.jpg",
+    "/images/anton-savinov-3rpjs5qwD_U-unsplash.jpg",
+    "/images/dan-lefebvre-APUvZYCjPJ0-unsplash.jpg",
+    "/images/close-up-hands-washing-laundry.jpg",
+    "/images/m0851---FH4Uo2PYA-unsplash.jpg",
    
   ];
 
@@ -30,7 +30,7 @@ const Services = () => {
       icon: <Sparkles className="w-8 h-8" />,
       title: "Lavage à Sec",
       description: "Traitement délicat pour vos tissus les plus précieux.",
-      image: "/public/images/lavage-a-sec.png"
+      image: "/images/lavage-a-sec.png"
     },
     {
       icon: <Shield className="w-8 h-8" />,
