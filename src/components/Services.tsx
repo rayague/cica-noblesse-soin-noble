@@ -48,7 +48,7 @@ const Services = () => {
       icon: <Droplets className="w-8 h-8" />,
       title: "Traitement de Taches",
       description: "Élimination experte des taches les plus tenaces.",
-      image: "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=400"
+      image: "/images/top-view-detergent-bottles-clothes.jpg"
     },
     {
       icon: <Sparkles className="w-8 h-8" />,
