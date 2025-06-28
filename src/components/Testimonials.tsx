@@ -2,7 +2,7 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Rosine Gangbé",
+    name: "Rosine Sessou",
     role: "Cliente fidèle",
     avatar: "https://images.pexels.com/photos/4241328/pexels-photo-4241328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     comment:
@@ -16,7 +16,7 @@ const testimonials = [
       "La qualité du repassage est exceptionnelle. Mes chemises sont toujours parfaites, ce qui est essentiel pour mon travail. Je recommande vivement.",
   },
   {
-    name: "Fatima Dagbe",
+    name: "Fatima Miwa",
     role: "Jeune maman",
     avatar: "https://images.pexels.com/photos/3779760/pexels-photo-3779760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     comment:
