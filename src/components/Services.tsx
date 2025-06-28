@@ -5,10 +5,11 @@ const Services = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const serviceImages = [
-    "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800",
-    "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=800",
-    "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=800",
-    "https://images.unsplash.com/photo-1489274495757-95c7c837b101?w=800"
+    "/public/images/anton-savinov-3rpjs5qwD_U-unsplash.jpg",
+    "/public/images/dan-lefebvre-APUvZYCjPJ0-unsplash.jpg",
+    "/public/images/close-up-hands-washing-laundry.jpg",
+    "/public/images/m0851---FH4Uo2PYA-unsplash.jpg",
+   
   ];
 
   useEffect(() => {
@@ -29,19 +30,19 @@ const Services = () => {
       icon: <Sparkles className="w-8 h-8" />,
       title: "Lavage à Sec",
       description: "Traitement délicat pour vos tissus les plus précieux.",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400"
+      image: "/public/images/lavage-a-sec.png"
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Service Complet",
       description: "Lavage + Repassage pour un résultat impeccable.",
-      image: "https://images.unsplash.com/photo-1489274495757-95c7c837b101?w=400"
+      image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400 "
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Repassage",
       description: "Finition professionnelle pour une tenue parfaite.",
-      image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400"
+      image: "https://images.unsplash.com/photo-1489274495757-95c7c837b101?w=400"
     },
     {
       icon: <Droplets className="w-8 h-8" />,
