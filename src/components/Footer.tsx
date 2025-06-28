@@ -42,8 +42,8 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Suivez-nous</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors"><Instagram size={20} /></a>
+              <a href="https://www.facebook.com/share/19J3m4cLy7/?mibextid=wwXIfr" className="text-gray-300 hover:text-yellow-400 transition-colors"><Facebook size={20} /></a>
+              <a href="https://www.instagram.com/cica_noblesse_pressing?igsh=MWJiNzc4N25zNGZsMQ%3D%3D&utm_source=qr" className="text-gray-300 hover:text-yellow-400 transition-colors"><Instagram size={20} /></a>
             </div>
           </div>
         </div>

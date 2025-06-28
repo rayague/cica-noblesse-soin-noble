@@ -56,7 +56,7 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Cotonou+Bénin"
+              href="https://maps.apple.com/place?address=Avenue%20du%20Renouveau,%20Cotonou,%20B%C3%A9nin&coordinate=6.389726,2.387465&name=CICA%20NOBLESSE%20PRESSING&place-id=IFAB0E8D741913B5D&map=explore"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-4 inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold px-4 py-2 rounded-full shadow hover:from-yellow-500 hover:to-yellow-600 hover:text-white transition-all duration-300"
@@ -89,7 +89,7 @@ const Header = () => {
               </a>
             ))}
             <a
-              href="https://www.google.com/maps/search/?api=1&query=Cotonou+Bénin"
+              href="https://maps.apple.com/place?address=Avenue%20du%20Renouveau,%20Cotonou,%20B%C3%A9nin&coordinate=6.389726,2.387465&name=CICA%20NOBLESSE%20PRESSING&place-id=IFAB0E8D741913B5D&map=explore"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold px-4 py-2 rounded-full shadow hover:from-yellow-500 hover:to-yellow-600 hover:text-white transition-all duration-300 justify-center"
