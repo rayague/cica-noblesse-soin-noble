@@ -36,7 +36,7 @@ const Services = () => {
       icon: <Shield className="w-8 h-8" />,
       title: "Service Complet",
       description: "Lavage + Repassage pour un résultat impeccable.",
-      image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=400 "
+      image: "/images/service-complet.jpg"
     },
     {
       icon: <Zap className="w-8 h-8" />,
@@ -54,7 +54,7 @@ const Services = () => {
       icon: <Sparkles className="w-8 h-8" />,
       title: "Blanchissage",
       description: "Redonnez l'éclat d'origine à vos vêtements blancs.",
-      image: "https://images.unsplash.com/photo-1567113463300-102a7eb3cb26?w=400"
+      image: "/images/blanchissage.png"
     },
     {
       icon: <Zap className="w-8 h-8" />,
