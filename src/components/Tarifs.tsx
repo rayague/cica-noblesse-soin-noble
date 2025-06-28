@@ -99,6 +99,7 @@ const Tarifs = () => {
                     <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Costume 3 pièces</td><td className="px-4 py-2 text-right">3 000 / 3 500 FCFA</td></tr>
                     <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Veste / Blazer</td><td className="px-4 py-2 text-right">1 500 FCFA</td></tr>
                     <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Complet (Lessi-Bazin-Pagne etc..)</td><td className="px-4 py-2 text-right">1 000 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">etc..</td><td className="px-4 py-2 text-right">...</td></tr>
                   </tbody>
                 </table>
               </div>
@@ -119,8 +120,9 @@ const Tarifs = () => {
                     <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Robe simple</td><td className="px-4 py-2 text-right">800 / 1 000 FCFA</td></tr>
                     <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Robe de soirée</td><td className="px-4 py-2 text-right">1 500 / 2 000 / 3 000 FCFA</td></tr>
                     <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Jupe</td><td className="px-4 py-2 text-right">500 / 700 FCFA</td></tr>
-                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Robe Bazin-Lessi-pagne-guipur +pierre</td><td className="px-4 py-2 text-right">1 500 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Robe Bazin-Lessi-pagne-guipur + Pierres</td><td className="px-4 py-2 text-right">1 500 FCFA</td></tr>
                     <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">Complet (Lessi-Bazin-Pagne)</td><td className="px-4 py-2 text-right">1 000 / 1 500 FCFA</td></tr>
+                    <tr className="hover:bg-blue-200/40 transition"><td className="px-4 py-2">etc..</td><td className="px-4 py-2 text-right"></td>...</tr>
                   </tbody>
                 </table>
               </div>
