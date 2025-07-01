@@ -41,7 +41,7 @@ const Hero = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 sm:p-8 md:p-12 border border-white/20 shadow-2xl">
             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-4 text-white leading-tight">
-            Expérience, élégance et fidélité <br />
+            Expérience, élégance et fidélité. <br />
             15 ans d’expertise au service de votre linge.
             </h1>
             <p className="text-sm sm:text-md text-gray-200 mb-8">
